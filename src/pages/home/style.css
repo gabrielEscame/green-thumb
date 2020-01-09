@@ -1,0 +1,47 @@
+*{
+  font-family: 'Roboto'
+}
+
+.home-container {
+  display: flex;
+}
+
+.logo-container{
+  margin: 50px 0px 0px 150px;
+}
+
+.start-quizz{
+  text-decoration: none;
+  background-color: #15573f;
+  color: white;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 12px 22px;
+  border-radius: 30px
+}
+
+.start-quizz:hover {
+  padding: 13px 23px;
+  box-shadow: rgb(21, 87, 63, 0.2) 3px 2px 3px 3px
+}
+
+.logo-container > h1 {
+  width: 300px;
+  font-weight: 700;
+  font-size: 60px;
+  color: #0c261c;
+  letter-spacing: 1px;
+  line-height: 64px;
+}
+
+.logo-container > img{
+  height: 23px;
+  margin-bottom: 30px;
+}
+
+.image-container > img{
+  height: 540px;
+  position: fixed;
+  top:26px;
+  left: 470px;
+}
