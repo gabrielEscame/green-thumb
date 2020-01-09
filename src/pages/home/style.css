@@ -1,5 +1,6 @@
 *{
-  font-family: 'Roboto'
+  font-family: 'Montserrat';
+  outline: none;
 }
 
 .home-container {
@@ -22,13 +23,13 @@
 
 .start-quizz:hover {
   padding: 13px 23px;
-  box-shadow: rgb(21, 87, 63, 0.2) 3px 2px 3px 3px
+  box-shadow: rgb(21, 87, 63, 0.4) 3px 2px 3px 3px
 }
 
 .logo-container > h1 {
   width: 300px;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 50px;
   color: #0c261c;
   letter-spacing: 1px;
   line-height: 64px;

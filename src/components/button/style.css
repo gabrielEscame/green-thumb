@@ -1,0 +1,11 @@
+.next-button{
+  font-weight: 400;
+  font-size: 13px;
+  color: #15573F;
+  background-color: transparent;
+  border: 1px solid #15573F;
+  border-radius: 30px;
+  padding: 10px 0px;
+  width:95px;
+  word-spacing: 3px;
+}
