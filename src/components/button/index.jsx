@@ -1,9 +1,9 @@
 import React from 'react';
 import './style.css'
 
-const Button = ({ label, method, styleName}) => {
+const Button = ({ label, method, styleName, image}) => {
   return (
-    <button onClick={method} type='submit' className={styleName}> {label} </button>
+    <button onClick={method} type='submit' className={styleName}> <img src={image} alt=""/>{label} </button>
   );
 }
 
