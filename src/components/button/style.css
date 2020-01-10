@@ -24,7 +24,7 @@
   background-color: transparent;
   border: 1px solid #15573F;
   border-radius: 30px;
-  padding: 6px 40px;
+  padding: 8px 40px;
   word-spacing: 3px;
   cursor: pointer; 
 }
@@ -45,8 +45,8 @@
   align-items: center;
   background-color: white;
   color: #6e6e6e;
-  height: 160px;
-  width: 180px;
+  height: 165px;
+  width: 185px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -59,8 +59,8 @@
   background-color: #fd9872;
   box-shadow: rgb(253, 152, 114, 0.35) -3px 15px 10px 0px;
   color: white;
-  height: 160px;
-  width: 180px;
+  height: 165px;
+  width: 185px;
   border: none;
   border-radius: 5px;
   font-weight: 700;
