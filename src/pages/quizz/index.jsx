@@ -146,9 +146,9 @@ const Quizz = () => {
                     {e.name}
                   </p>
                   <div className='price-status-container'>
-
+                    {`$${e.price}`}
                   </div>
-                  <Link to='/' className='next-button'>
+                  <Link to='/' className='buy-button'>
                     buy now
                   </Link>
                 </div>

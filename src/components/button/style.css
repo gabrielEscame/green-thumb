@@ -14,6 +14,26 @@
   width: 120px;
 }
 
+.buy-button {
+  margin-top: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 400;
+  font-size: 13px;
+  color: #15573F;
+  background-color: transparent;
+  border: 1px solid #15573F;
+  border-radius: 30px;
+  padding: 6px 40px;
+  word-spacing: 3px;
+  cursor: pointer; 
+}
+
+.buy-button:hover{
+  color: white;
+  background: #15573F;
+}
+
 .next-button:hover{
   color: white;
   background: #15573F;
