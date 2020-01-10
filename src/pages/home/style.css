@@ -22,8 +22,7 @@
 }
 
 .start-quizz:hover {
-  padding: 13px 23px;
-  box-shadow: rgb(21, 87, 63, 0.4) 3px 2px 3px 3px
+  box-shadow: rgb(21, 87, 63, 0.2) -3px 7px 10px 0px;
 }
 
 .logo-container > h1 {

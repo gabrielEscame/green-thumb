@@ -2,34 +2,82 @@ body{
   background-color:#f6f6f6;
 }
 
-.sunQuizz-container{
+.quizz-container{
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #6e6e6e;
 }
 
-.sunQuizz-container > img {
+.sun-illustration {
   height: 95px;
   margin-top: 30px;
   margin-bottom: 15px;
 }
 
-.sunQuizz-container > h1 {
+.water-illustration {
+  height: 90px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.pet-illustration {
+  height: 73px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.hand-illustration {
+  height: 80px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+
+.h1-container {
   font-size: 23px;
   font-weight: 400;
   width: 370px;
   text-align: center;
-  margin-bottom: 30px
+  margin-bottom: 50px
+}
+
+.pick-h1-container{
+  font-size: 45px;
+  color:#0c261c;
+  font-weight: 700;
+}
+
+.quizz-container > p {
+  font-size: 10px;  
+  margin-bottom: 50px;
 }
 
 .buttons-container{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+}
+
+.pet-buttons-container{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 390px;
+}
+
+.choice-buttons-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .next-button-container{
-  width: 600px;
+  width: 100%;
+  max-width: 100;
   display: flex;
   justify-content: space-between;
 }
@@ -49,4 +97,28 @@ body{
   position: absolute;
   left: 67px;
   top:230px;
+}
+
+.pet-h1-container{
+  font-size: 23px;
+  font-weight: 400;
+  width: 500px;
+  text-align: center;
+  margin-bottom: 20px
+}
+
+.plants-container{
+  background-color: red;
+  width: 800px;
+}
+
+.plants-container > ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+.plant-buy-container{
+  background-color:white;
+  width: 300px;
 }
