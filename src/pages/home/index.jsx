@@ -3,6 +3,7 @@ import './style.css'
 import logo from '../../images/logo/logo-greenthumb.svg';
 import illustration from '../../images/illustrations/illustration-home.png';
 import {Link} from 'react-router-dom';
+import whiteArrow from '../../images/icons/white/arrow-white.png'
 
 const Home = () => {
   return(
@@ -13,7 +14,8 @@ const Home = () => {
           Find your next green friend
         </h1>
         <Link className='start-quizz' to='/quizz'>
-          --> start quizz
+          <img src={whiteArrow} alt="arrow"/>
+          start quizz
         </Link>
       </div>
       <div className='image-container'>

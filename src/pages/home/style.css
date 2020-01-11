@@ -1,6 +1,8 @@
 *{
   font-family: 'Montserrat';
   outline: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .home-container {
@@ -8,16 +10,19 @@
 }
 
 .logo-container{
-  margin: 50px 0px 0px 150px;
+  margin: 50px 0px 0px 170px;
 }
 
 .start-quizz{
+  display: flex;
+  justify-content: space-between;
+  width: 118px;
   text-decoration: none;
   background-color: #15573f;
   color: white;
   font-weight: 700;
-  font-size: 13px;
-  padding: 12px 22px;
+  font-size: 15px;
+  padding: 14px 22px;
   border-radius: 30px
 }
 
@@ -25,23 +30,28 @@
   box-shadow: rgb(21, 87, 63, 0.2) -3px 7px 10px 0px;
 }
 
+.start-quizz > img {
+  height: 20px;
+}
+
 .logo-container > h1 {
-  width: 300px;
+  width: 360px;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 60px;
   color: #0c261c;
   letter-spacing: 1px;
   line-height: 64px;
+  margin-bottom: 35px;
 }
 
 .logo-container > img{
-  height: 23px;
-  margin-bottom: 30px;
+  height: 25px;
+  margin-bottom: 85px;
 }
 
 .image-container > img{
-  height: 540px;
+  height: 600px;
   position: fixed;
-  top:26px;
-  left: 470px;
+  top:24px;
+  left: 515px;
 }
