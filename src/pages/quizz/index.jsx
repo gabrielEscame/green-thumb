@@ -40,7 +40,7 @@ const Quizz = () => {
   const [waterVisible, setWaterVisible] = useState(false);
   const [petVisible, setPetVisible] = useState(false);
 
-  useEffect(()=> {
+  useEffect(() => {
     api.get(`front-plantTest-service?sun=${sun}&water=${water}&pets=${pet}`)
       .then(response => setPlantList(response.data))
       .catch(err => console.log(err))
@@ -131,7 +131,7 @@ const Quizz = () => {
             </div>
           </div>
         </div> : null}
-        {results ? 
+      {results ?
         <div className='quizz-container'>
           <img className='hand-illustration' src={handImage} alt='pick' />
           <h1 className='pick-h1-container'>
@@ -141,7 +141,7 @@ const Quizz = () => {
             <ul>
               {plantList.map((e, idx) => (
                 <div key={idx} className='plant-buy-container'>
-                  <img src={e.url} alt="plant"/>
+                  <img src={e.url} alt="plant" />
                   <p>
                     {e.name}
                   </p>

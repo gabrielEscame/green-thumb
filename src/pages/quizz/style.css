@@ -28,9 +28,9 @@ body{
 }
 
 .hand-illustration {
-  height: 80px;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  height: 90px;
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
 
@@ -55,6 +55,7 @@ body{
   color:#0c261c;
   font-weight: 700;
   margin-top: 2px;
+  margin-bottom: 35px
 }
 
 .quizz-container > p {
@@ -110,7 +111,7 @@ body{
 
 .plants-container{
   /* background-color: red; */
-  width: 700px;
+  width: 740px;
 }
 
 .plants-container > ul {
@@ -125,9 +126,9 @@ body{
   flex-direction: column;
   align-items: center;
   background-color:white;
-  width: 200px;
-  height: 265px;
-  margin-bottom: 30px;
+  width: 215px;
+  height: 275px;
+  margin-bottom: 45px;
   border-radius: 5px;
 }
 
