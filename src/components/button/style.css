@@ -1,9 +1,11 @@
 .next-button{
+  display: flex;
+  justify-content: space-evenly;
   margin-top: 40px;
   text-decoration: none;
   text-align: center;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 15px;
   color: #15573F;
   background-color: transparent;
   border: 1px solid #15573F;
@@ -14,27 +16,31 @@
   width: 120px;
 }
 
+.next-arrow {
+  height: 20px;
+}
+
+.back-arrow {
+  height: 20px;
+  transform: rotate(-180deg)
+}
+
 .buy-button {
   margin-top: 10px;
   text-decoration: none;
   text-align: center;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   color: #15573F;
   background-color: transparent;
   border: 1px solid #15573F;
   border-radius: 30px;
-  padding: 10px 40px;
+  padding: 13px 55px;
   word-spacing: 3px;
   cursor: pointer; 
 }
 
 .buy-button:hover{
-  color: white;
-  background: #15573F;
-}
-
-.next-button:hover{
   color: white;
   background: #15573F;
 }

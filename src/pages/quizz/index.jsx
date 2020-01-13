@@ -5,6 +5,8 @@ import './style.css'
 import Button from '../../components/button';
 // LOGO IMAGE IMPORT
 import logo from '../../images/logo/logo-greenthumb.svg'
+// ARROW IMAGE IMPORT
+import arrow from '../../images/icons/green/arrow.png'
 // SUN IMAGES IMPORT
 import sunImage from '../../images/illustrations/sun.png';
 import highSun from '../../images/icons/coral/high-sun.svg';
@@ -16,10 +18,10 @@ import noWhiteSun from '../../images/icons/white/no-answer.svg';
 // WATER IMAGES IMPORT
 import waterImage from '../../images/illustrations/wateringcan.png';
 import rarelyWater from '../../images/icons/green/one-drop.svg';
-import regularyWater from '../../images/icons/green/two-drops.svg';
+import regularlyWater from '../../images/icons/green/two-drops.svg';
 import dailyWater from '../../images/icons/green/three-drops.svg';
 import rarelyWhiteWater from '../../images/icons/white/one-drop.svg';
-import regularyWhiteWater from '../../images/icons/white/two-drops.svg';
+import regularlyWhiteWater from '../../images/icons/white/two-drops.svg';
 import dailyWhiteWater from '../../images/icons/white/three-drops.svg';
 // PET IMAGES IMPORT
 import petImage from '../../images/illustrations/dog.png';
@@ -29,6 +31,14 @@ import yesWhitePet from '../../images/icons/white/pet.svg';
 import noWhitePet from '../../images/icons/white/no-answer.svg';
 // HAND IMAGE IMPORT
 import handImage from '../../images/illustrations/pick.png'
+// INFORMATION IMAGES IMPORT
+import highSunGrey from '../../images/icons/grey/high-sun.png';
+import lowSunGrey from '../../images/icons/grey/low-sun.png';
+import noSunGrey from '../../images/icons/grey/no-answer.svg';
+import rarelyWaterGrey from '../../images/icons/grey/one-drop.png';
+import regularlyWaterGrey from '../../images/icons/grey/two-drops.png';
+import dailyWaterGrey from '../../images/icons/grey/three-drops.png';
+import toxicGrey from '../../images/icons/grey/toxic.svg';
 
 const Quizz = () => {
   const [results, setResults] = useState(false);
@@ -89,8 +99,11 @@ const Quizz = () => {
               <Button method={() => setSun('no')} label='No sunlight' image={sun === 'no' ? noWhiteSun : noSun} styleName={sun === 'no' ? 'sun-chosen-button' : 'button-choice'} />
             </div>
             <div className='next-button-container'>
-              <Link className='next-button' to='/'> &lt;-- home </Link>
-              <Button method={() => sunOff()} label='--> next' styleName='next-button' />
+              <Link className='next-button' to='/'>
+                <img className='back-arrow' src={arrow} alt="" />
+                home
+              </Link>
+              <Button method={() => sunOff()} label='next' styleName='next-button' image={arrow} imageClass='next-arrow' />
             </div>
           </div>
         </div> : null}
@@ -104,12 +117,12 @@ const Quizz = () => {
           <div className='buttons-container'>
             <div className="choice-buttons-container">
               <Button method={() => setWater('rarely')} label='Rarely' image={water === 'rarely' ? rarelyWhiteWater : rarelyWater} styleName={water === 'rarely' ? 'water-chosen-button' : 'button-choice'} />
-              <Button method={() => setWater('regulary')} label='Regulary' image={water === 'regulary' ? regularyWhiteWater : regularyWater} styleName={water === 'regulary' ? 'water-chosen-button' : 'button-choice'} />
+              <Button method={() => setWater('regularly')} label='Regularly' image={water === 'regularly' ? regularlyWhiteWater : regularlyWater} styleName={water === 'regularly' ? 'water-chosen-button' : 'button-choice'} />
               <Button method={() => setWater('daily')} label='Daily' image={water === 'daily' ? dailyWhiteWater : dailyWater} styleName={water === 'daily' ? 'water-chosen-button' : 'button-choice'} />
             </div>
             <div className="next-button-container">
-              <Button method={() => sunOn()} label='<-- previous' styleName='next-button' />
-              <Button method={() => waterOff()} label='--> next' styleName='next-button' />
+              <Button method={() => sunOn()} label='previous' styleName='next-button' image={arrow} imageClass='back-arrow' />
+              <Button method={() => waterOff()} label='next' styleName='next-button' image={arrow} imageClass='next-arrow' />
             </div>
           </div>
         </div> : null}
@@ -126,8 +139,8 @@ const Quizz = () => {
               <Button method={() => setPet('false')} label="No/They don't care" image={pet === 'false' ? noWhitePet : noPet} styleName={pet === 'false' ? 'sun-chosen-button' : 'button-choice'} />
             </div>
             <div className="next-button-container">
-              <Button method={() => waterOn()} label='<-- previous' styleName='next-button' />
-              <Button method={() => petOff()} label='--> finish' styleName='next-button' />
+              <Button method={() => waterOn()} label='previous' styleName='next-button' image={arrow} imageClass='back-arrow' />
+              <Button method={() => petOff()} label='finish' styleName='next-button' image={arrow} imageClass='next-arrow' />
             </div>
           </div>
         </div> : null}
@@ -142,11 +155,22 @@ const Quizz = () => {
               {plantList.map((e, idx) => (
                 <div key={idx} className='plant-buy-container'>
                   <img src={e.url} alt="plant" />
-                  <p>
-                    {e.name}
-                  </p>
-                  <div className='price-status-container'>
-                    {`$${e.price}`}
+                  <div className="plant-informations-container">
+                    <p>
+                      {e.name}
+                    </p>
+                    <div className='price-status-container'>
+                      {`$${e.price}`}
+                      <div className='status-container'>
+                        {e.toxicity ? <img src={toxicGrey} alt="toxic"/> : null}
+                        {e.sun === 'high' ? <img src={highSunGrey} alt="highsun"/>: null}
+                        {e.sun === 'low' ? <img src={lowSunGrey} alt="lowsun"/>: null}
+                        {e.sun === 'no' ? <img src={noSunGrey} alt="nosun"/>: null}
+                        {e.water === 'rarely' ? <img src={rarelyWaterGrey} alt="one-drop"/>: null}
+                        {e.water === 'regularly' ? <img src={regularlyWaterGrey} alt="two-drops"/>: null}
+                        {e.water === 'daily' ? <img src={dailyWaterGrey} alt="three-drops"/>: null}
+                      </div>
+                    </div>
                   </div>
                   <Link to='/' className='buy-button'>
                     buy now
