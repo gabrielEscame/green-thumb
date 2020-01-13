@@ -172,7 +172,7 @@ const Quizz = () => {
                       </div>
                     </div>
                   </div>
-                  <Link to='/' className='buy-button'>
+                  <Link to={`quizz/${e.id}`} className='buy-button'>
                     buy now
                   </Link>
                 </div>
