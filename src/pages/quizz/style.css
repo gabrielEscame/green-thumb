@@ -94,11 +94,11 @@ body{
 
 
 .logo{
-  height: 20px;
+  height: 23px;
   position: absolute;
   transform: rotate(270deg);
-  top: 115px;
-  left: -8px;
+  top: 120px;
+  left: -20px;
 }
 
 .side-line{
@@ -106,7 +106,7 @@ body{
   height: 55vh;
   position: absolute;
   left: 73px;
-  top: 245px;
+  top: 255px;
 }
 
 .plants-container{

@@ -1,0 +1,139 @@
+.purchase-container{
+  display: flex;
+  justify-content: space-between;
+  background-color:white;
+  height: 100vh;
+}
+
+.purchase-logo{
+  height: 23px;
+  position: absolute;
+  transform: rotate(270deg);
+  top: 165px;
+  left: -20px;
+}
+
+.purchase-side-line{
+  border-left: 1px solid #6e6e6e;
+  height: 45vh;
+  position: absolute;
+  left: 73px;
+  top: 295px;
+}
+
+.purchase-plant-container{
+  padding: 80px 0px 0px 240px;
+  height: 80vh;
+}
+
+.purchase-plant-container > h1 {
+  font-size: 40px;
+  width: 300px;
+  color: #0c261c
+}
+
+.purchase-plant-container > h3 {
+  font-size: 25px;
+  color: #d6d6d6;
+}
+
+.purchase-plant-container > img {
+  height: 250px;
+  margin-bottom: 0px;
+}
+
+.purchase-plant-container > p {
+  color: #6e6e6e;
+  margin-bottom: 20px;
+}
+
+.purchase-plant-status {
+  display: flex;
+  height: 100px;
+}
+
+.purchase-status-image-plant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between
+}
+
+.purchase-status-image-plant > img {
+  height: 22px;
+}
+
+.purchase-status-text-plant {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+.purchase-status-text-plant > p {
+  color: #6e6e6e;
+}
+
+.purchase-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+  margin-right: 250px;
+  margin-top: 80px;
+  height: 75vh;
+  width: 28vw;
+}
+
+.purchase-form-text-container {
+  width: 70%;
+}
+
+.purchase-form-text-container > h1 {
+  font-size: 35px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: #0c261c;
+}
+
+.purchase-form-text-container > p {
+  width: 250px;
+  color: #6e6e6e;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.purchase-form-text-container > h2 {
+  font-size: 15px;
+  color: #6e6e6e;
+  margin-bottom: 10px;
+}
+
+.purchase-form-text-container > input {
+  border: none;
+  padding: 12px 0px 12px 0px; 
+  border-radius: 30px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+::placeholder {
+  padding-left: 20px;
+  color: #d6d6d6;
+}
+
+.send-button{
+  margin-top: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  color: #15573F;
+  background-color: transparent;
+  border: 1px solid #15573F;
+  border-radius: 30px;
+  padding: 13px 55px;
+  word-spacing: 3px;
+  cursor: pointer;
+}
