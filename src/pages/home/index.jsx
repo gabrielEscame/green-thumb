@@ -15,7 +15,9 @@ const Home = () => {
         </h1>
         <Link className='start-quizz' to='/quizz'>
           <img src={whiteArrow} alt="arrow"/>
-          start quizz
+          <p>
+            start quizz
+          </p>
         </Link>
       </div>
       <div className='image-container'>

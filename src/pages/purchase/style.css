@@ -112,10 +112,10 @@
 
 .purchase-form-text-container > input {
   border: none;
-  padding: 12px 0px 12px 0px; 
+  padding: 12px 0px 12px 20px; 
   border-radius: 30px;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 ::placeholder {
@@ -123,17 +123,8 @@
   color: #d6d6d6;
 }
 
-.send-button{
-  margin-top: 10px;
-  text-decoration: none;
-  text-align: center;
-  font-weight: 400;
-  font-size: 14px;
-  color: #15573F;
-  background-color: transparent;
-  border: 1px solid #15573F;
-  border-radius: 30px;
-  padding: 13px 55px;
-  word-spacing: 3px;
-  cursor: pointer;
+.purchase-button-container {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 70%;
 }

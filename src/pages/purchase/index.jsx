@@ -61,7 +61,9 @@ const Purchase = (props) => {
           <h2>E-mail</h2>
           <input type="text" placeholder='plantperson@email.com' />
         </div>
-          <Button label='send' method={() => console.log('enviouuu')} styleName='buy-button'/>
+        <div className='purchase-button-container'>
+          <Button label='send' method={() => console.log('enviouuu')} styleName='send-button'/>
+        </div>
       </div>
     </div>
   );

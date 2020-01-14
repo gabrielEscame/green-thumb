@@ -100,3 +100,73 @@
   height: 50px;
   margin: 30px 0px 25px 0px
 }
+
+.send-button{
+  margin-top: 28px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  color: #15573F;
+  background-color: transparent;
+  border: 1px solid #15573F;
+  border-radius: 30px;
+  padding: 12px 42px;
+  word-spacing: 3px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1920px) {
+
+  .button-choice {
+    height: 245px;
+    width: 265px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+
+  .sun-chosen-button{
+    height: 245px;
+    width: 265px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+
+  .water-chosen-button{
+    height: 245px;
+    width: 265px;
+    font-size: 18px;
+  }
+
+  .water-chosen-button > img {
+    height: 70px;
+    margin: 60px 0px 45px 0px
+  }
+  
+  .sun-chosen-button > img{
+    height: 70px;
+    margin: 60px 0px 45px 0px
+  }
+  
+  .button-choice > img {
+    height: 70px;
+    margin: 60px 0px 45px 0px
+  }
+
+  .next-button{
+    font-size: 18px;
+    border-radius: 30px;
+    padding: 18px 0px;
+    word-spacing: 3px;
+    cursor: pointer;
+    width: 160px;
+  }
+
+  .buy-button {
+    margin-top: 15px;
+    font-size: 18px;
+    border-radius: 30px;
+    padding: 17px 85px;
+    word-spacing: 3px; 
+  }
+
+}

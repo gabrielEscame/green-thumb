@@ -165,3 +165,110 @@ body{
   height: 20px;
   margin-right: 8px;
 }
+
+@media only screen and (max-width: 1920px){
+
+  .logo{
+    height: 28px;
+    top: 180px;
+    left: -20px;
+  }
+  
+  .side-line{
+    border-left: 1px solid #6e6e6e;
+    height: 55vh;
+    position: absolute;
+    left: 98px;
+    top: 340px;
+  }
+  
+
+  .sun-illustration {
+    height: 150px;
+    margin-top: 80px;
+  }
+
+  .water-illustration {
+    height: 150px;
+    margin-top: 80px;
+  }
+  
+  .pet-illustration {
+    height: 110px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
+  
+  .hand-illustration {
+    height: 135px;
+    margin-top: 80px;
+    margin-bottom: 35px;
+  }
+
+  .h1-container {
+    font-size: 35px;
+    width: 490px;
+    line-height: 50px;
+  }
+
+  .pet-h1-container{
+    font-size: 40px;
+    width: 900px;
+    margin-bottom: 30px
+  }
+
+  .quizz-container > p {
+    font-size: 18px;  
+    margin-bottom: 80px;
+  }
+
+  .buttons-container {
+    width: 870px;
+  }
+
+  .pet-buttons-container{
+    width: 570px;
+  }
+
+  .pick-h1-container{
+    font-size: 80px;
+    margin-top: 2px;
+    margin-bottom: 100px
+  }
+
+  .plants-container{
+    /* background-color: red; */
+    width: 1100px;
+  }
+
+  .plant-buy-container {
+    width: 320px;
+    height: 400px;
+    margin-bottom: 45px;
+    border-radius: 5px;
+  }
+
+  .plant-buy-container > img {
+    height: 220px;
+  }
+
+  .plant-informations-container {
+    width: 245px;
+  }
+
+  .plant-informations-container > p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .price-status-container{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .status-container > img {
+    height: 25px;
+    margin-right: 12px;
+  }
+
+}
