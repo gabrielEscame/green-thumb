@@ -134,15 +134,15 @@
 @media only screen and (min-width: 1920px) {
 
   .purchase-logo{
-    height: 28px;
+    height: 30px;
     top: 240px;
     left: -5px;
   }
   
   .purchase-side-line{
-    height: 45vh;
-    left: 110px;
-    top: 380px;;
+    height: 40vh;
+    left: 118px;
+    top: 440px;;
   }
 
   .purchase-plant-container{
