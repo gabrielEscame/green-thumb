@@ -177,9 +177,7 @@ body{
   }
   
   .side-line{
-    border-left: 1px solid #6e6e6e;
     height: 55vh;
-    position: absolute;
     left: 98px;
     top: 340px;
   }
@@ -287,9 +285,7 @@ body{
   }
   
   .side-line{
-    border-left: 1px solid #6e6e6e;
     height: 55vh;
-    position: absolute;
     left: 98px;
     top: 340px;
   }
