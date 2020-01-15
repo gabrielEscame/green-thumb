@@ -236,4 +236,11 @@
     padding: 15px 65px;
     word-spacing: 3px; 
   }
+
+  .send-button{
+    margin-top: 10px;
+    font-size: 18px;
+    border-radius: 30px;
+    padding: 18px 55px;
+  }
 }

@@ -153,7 +153,6 @@
   .purchase-plant-container > h1 {
     font-size: 60px;
     width: 300px;
-    color: #0c261c
   }
 
   .purchase-plant-container > h3 {
@@ -199,6 +198,87 @@
     width: 300px;
     line-height: 30px;
     margin-bottom: 50px;
+  }
+
+  .purchase-form-text-container > h2 {
+    font-size: 20px;
+  }
+
+  .purchase-form-text-container > input {
+    padding: 18px 18px;
+    width: 90%; 
+    border-radius: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+
+  .purchase-logo{
+    height: 30px;
+    top: 240px;
+    left: -5px;
+  }
+  
+  .purchase-side-line{
+    height: 35vh;
+    left: 120px;
+    top: 420px;;
+  }
+
+  .purchase-plant-container{
+    padding: 120px 0px 0px 300px;
+    height: 80vh;
+  }
+
+  .purchase-plant-container > h1 {
+    font-size: 60px;
+    width: 300px;
+  }
+
+  .purchase-plant-container > h3 {
+    font-size: 30px;
+  }
+
+  .purchase-plant-container > img {
+    height: 300px;
+  }
+
+  .purchase-status-text-plant {
+    margin-left: 18px;
+    height: 120px;
+  }
+
+  .purchase-status-image-plant {
+    height: 120px;
+  }
+
+  .purchase-status-image-plant > img {
+    height: 25px;
+  }
+  
+  .purchase-status-text-plant > p {
+    font-size: 20px;
+  }
+
+  .purchase-form-container {
+    margin-right: 150px;
+    margin-top: 120px;
+    height: 68vh;
+    width: 50vh;
+  }
+
+  .purchase-form-text-container > h1 {
+    font-size: 45px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+  }
+
+  .purchase-form-text-container > p {
+    font-size: 20px;
+    width: 300px;
+    line-height: 30px;
+    margin-bottom: 45px;
   }
 
   .purchase-form-text-container > h2 {
