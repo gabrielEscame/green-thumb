@@ -166,7 +166,9 @@ body{
   margin-right: 8px;
 }
 
-@media only screen and (max-width: 1920px){
+/* RESPONSIVITY 1920 */
+
+@media only screen and (min-width: 1920px){
 
   .logo{
     height: 28px;
@@ -263,6 +265,115 @@ body{
 
   .price-status-container{
     font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .status-container > img {
+    height: 25px;
+    margin-right: 12px;
+  }
+
+}
+
+
+/* RESPONSIVITY MAC B00K */
+
+@media only screen and (min-width: 1440px) {
+  
+  .logo{
+    height: 28px;
+    top: 180px;
+    left: -20px;
+  }
+  
+  .side-line{
+    border-left: 1px solid #6e6e6e;
+    height: 55vh;
+    position: absolute;
+    left: 98px;
+    top: 340px;
+  }
+
+  .sun-illustration {
+    height: 130px;
+    margin-top: 80px;
+  }
+
+  .water-illustration {
+    height: 130px;
+    margin-top: 80px;
+  }
+  
+  .pet-illustration {
+    height: 95px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+  
+  .hand-illustration {
+    height: 125px;
+    margin-top: 80px;
+    margin-bottom: 35px;
+  }
+
+  .h1-container {
+    font-size: 30px;
+    width: 480px;
+    line-height: 50px;
+  }
+
+  .pet-h1-container{
+    font-size: 35px;
+    width: 900px;
+    margin-bottom: 30px
+  }
+
+  .quizz-container > p {
+    font-size: 16px;  
+    margin-bottom: 60px;
+  }
+
+  .buttons-container {
+    width: 820px;
+  }
+
+  .pet-buttons-container{
+    width: 525px;
+  }
+
+  .pick-h1-container{
+    font-size: 65px;
+    margin-top: 2px;
+    margin-bottom: 100px
+  }
+
+  .plants-container{
+    /* background-color: red; */
+    width: 950px;
+  }
+
+  .plant-buy-container {
+    width: 280px;
+    height: 380px;
+    margin-bottom: 45px;
+    border-radius: 5px;
+  }
+
+  .plant-buy-container > img {
+    height: 200px;
+  }
+
+  .plant-informations-container {
+    width: 205px;
+  }
+
+  .plant-informations-container > p {
+    font-size: 18px;
+    margin-bottom: 13px;
+  }
+
+  .price-status-container{
+    font-size: 16px;
     margin-bottom: 10px;
   }
   

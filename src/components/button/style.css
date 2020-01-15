@@ -115,7 +115,9 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 1920px) {
+/* RESPONSIVITY 1920 */
+
+@media only screen and (min-width: 1920px) {
 
   .button-choice {
     height: 245px;
@@ -169,4 +171,62 @@
     word-spacing: 3px; 
   }
 
+}
+
+/* RESPONSIVITY MAC B00K */
+
+@media only screen and (min-width: 1440px) {
+
+  .button-choice {
+    height: 225px;
+    width: 245px;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+
+  .sun-chosen-button{
+    height: 225px;
+    width: 245px;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+
+  .water-chosen-button{
+    height: 225px;
+    width: 245px;
+    font-size: 15px;
+  }
+
+  .water-chosen-button > img {
+    height: 70px;
+    margin: 60px 0px 45px 0px
+  }
+  
+  .sun-chosen-button > img{
+    height: 70px;
+    margin: 60px 0px 45px 0px
+  }
+  
+  .button-choice > img {
+    height: 70px;
+    margin: 60px 0px 45px 0px
+  }
+
+  .next-button{
+    font-size: 18px;
+    border-radius: 30px;
+    padding: 18px 0px;
+    word-spacing: 3px;
+    cursor: pointer;
+    width: 160px;
+    margin-top: 55px;
+  }
+
+  .buy-button {
+    margin-top: 15px;
+    font-size: 18px;
+    border-radius: 30px;
+    padding: 15px 65px;
+    word-spacing: 3px; 
+  }
 }

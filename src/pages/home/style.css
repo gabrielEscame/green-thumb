@@ -57,7 +57,9 @@
   left: 515px;
 }
 
-@media only screen and (max-width: 1920px) {
+/* RESPONSIVITY 1920 */
+
+@media only screen and (min-width: 1920px) {
 
   .logo-container{
     margin: 100px 0px 0px 220px;
@@ -77,7 +79,7 @@
 
   .image-container > img{
     height: 900px;
-    top: 32px;
+    top: 33px;
     left: 720px;
   }
 
@@ -95,5 +97,48 @@
 
   .start-quizz > img {
     height: 28px;
+  }
+}
+
+/* RESPONSIVITY MAC B00K */
+
+@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+  
+  .logo-container{
+    margin: 140px 0px 0px 180px;
+  }
+
+  .logo-container > h1 {
+    width: 400px;
+    font-size: 65px;
+    margin-bottom: 35px;
+    line-height: 75px;
+  }
+
+  .logo-container > img{
+    height: 25px;
+    margin-bottom: 80px;
+  }
+
+  .image-container > img{
+    height: 800px;
+    top: 100px;
+    left: 500px;
+  }
+
+  .start-quizz{
+    width: 140px;
+    text-decoration: none;
+    padding: 16px 22px;
+    border-radius: 50px;
+    font-size: 15px;
+  }
+
+  .start-quizz > p{
+    margin-right: 15px;
+  }
+
+  .start-quizz > img {
+    height: 20px;
   }
 }
