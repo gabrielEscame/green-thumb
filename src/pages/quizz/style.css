@@ -549,10 +549,11 @@ body{
   }
 
   .plants-container > ul {
-    width: 370vw;
+    width: 550vw;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: start;
     align-items: center;
   }
 
@@ -560,6 +561,7 @@ body{
     width: 85vw;
     height: 47vh;
     box-shadow: rgb(0, 0, 0, 0.05) -3px 25px 25px 0px;
+    margin: 0px 20px 0px 10px
   }
 
   .plant-buy-container > img {
