@@ -132,6 +132,10 @@ const Quizz = () => {
           <h1 className='pet-h1-container'>
             Do you have pets? Do they <b> chew </b> plants?
           </h1>
+          <div className="pet-h1-mobile-container">
+            <h1>Do you have pets ?</h1>
+            <h1>Do the <b> chew </b> plants ?</h1>
+          </div>
           <p>We are asking because some plants can be <b> toxic</b> for your buddy. </p>
           <div className='pet-buttons-container'>
             <div className="choice-buttons-container">

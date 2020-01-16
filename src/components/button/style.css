@@ -244,3 +244,56 @@
     padding: 18px 55px;
   }
 }
+
+/* MOBILE REPONSIVITY */
+
+@media only screen and (max-width: 500px) {
+
+  .button-choice {
+    flex-direction: row;
+    height: 90px;
+    width: 80vw;
+    border-radius: 5px;
+    font-size: 15px;
+    box-shadow:rgb(0, 0, 0, 0.05) -3px 25px 25px 0px;
+  }
+
+  .button-choice > img {
+    height: 50px;
+    margin: 0px 40px 0px 20px
+  }
+
+  .sun-chosen-button {
+    flex-direction: row;
+    height: 90px;
+    width: 80vw;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+
+  .sun-chosen-button > img  {
+    height: 50px;
+    margin: 0px 40px 0px 20px
+  }
+
+  .water-chosen-button {
+    flex-direction: row;
+    height: 90px;
+    width: 80vw;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+
+  .water-chosen-button> img {
+    height: 50px;
+    margin: 0px 40px 0px 20px
+  }
+  
+  .next-button {
+    font-size: 16px;
+    padding: 18px 0px;
+    width: 40vw;
+    margin-top: 45px;
+  }
+
+}

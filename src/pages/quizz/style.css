@@ -211,6 +211,10 @@ body{
     line-height: 50px;
   }
 
+  .pet-h1-mobile-container {
+    display: none;
+  }
+
   .pet-h1-container{
     font-size: 40px;
     width: 900px;
@@ -318,6 +322,10 @@ body{
     line-height: 50px;
   }
 
+  .pet-h1-mobile-container {
+    display: none;
+  }
+
   .pet-h1-container{
     font-size: 35px;
     width: 900px;
@@ -378,4 +386,75 @@ body{
     margin-right: 12px;
   }
 
+}
+
+/* MOBILE RESPONSIVITY */
+
+@media only screen and (max-width: 500px) {
+
+  .logo{
+   display: none;
+  }
+  
+  .side-line{
+    display: none;
+  }
+
+  .quizz-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #6e6e6e;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .h1-container {
+    width: 74%;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+
+  .buttons-container{
+    width: 100vw;
+  }
+
+  .choice-buttons-container{
+    flex-direction: column;
+    align-items: center;
+    height: 320px;
+  }
+
+  .next-button-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .pet-illustration {
+    height: 90px;
+  }
+
+  .pet-h1-container {
+    display: none;
+  }
+
+  .pet-h1-mobile-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .pet-h1-mobile-container > h1 {
+    font-weight: 200;
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .quizz-container > p {
+    width: 80vw;
+    text-align: center;
+  }
 }

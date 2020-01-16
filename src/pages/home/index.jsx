@@ -21,7 +21,6 @@ const Home = () => {
         </Link>
       </div>
       <div className='image-container'>
-        {/* <img src={illustration} alt="illustration"/> */}
         <div id='illustration-home'/>
       </div>
     </div>
