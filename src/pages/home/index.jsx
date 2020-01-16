@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css'
 import logo from '../../images/logo/logo-greenthumb.svg';
-import illustration from '../../images/illustrations/illustration-home.png';
+// import illustration from '../../images/illustrations/illustration-home.png';
 import {Link} from 'react-router-dom';
 import whiteArrow from '../../images/icons/white/arrow-white.png'
 
@@ -21,7 +21,8 @@ const Home = () => {
         </Link>
       </div>
       <div className='image-container'>
-        <img src={illustration} alt="illustration"/>
+        {/* <img src={illustration} alt="illustration"/> */}
+        <div id='illustration-home'/>
       </div>
     </div>
   );
