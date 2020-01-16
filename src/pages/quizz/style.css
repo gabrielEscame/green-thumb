@@ -440,6 +440,7 @@ body{
     align-items: center;
   }
 
+
   .logo-mobile {
     display: flex;
     margin-top: 30px;
@@ -460,7 +461,6 @@ body{
     align-items: center;
     color: #6e6e6e;
     width: 100vw;
-    height: 100vh;
   }
 
   .sun-h1-container {
@@ -541,10 +541,12 @@ body{
     font-size: 45px;
     width: 80vw;
     text-align: center;
+    margin-bottom: 30px;
   }
 
   .plants-container {
     overflow-x: auto;
+    overflow-y: hidden;
     width: 100vw;
   }
 
@@ -558,14 +560,14 @@ body{
   }
 
   .plant-buy-container {
-    width: 85vw;
-    height: 47vh;
+    width: 300px;
+    height: 400px;
     box-shadow: rgb(0, 0, 0, 0.05) -3px 25px 25px 0px;
     margin: 0px 20px 0px 10px
   }
 
   .plant-buy-container > img {
-    height: 200px;
+    height: 60%;
   }
 
   .plant-informations-container {
@@ -573,11 +575,11 @@ body{
   }
 
   .plant-informations-container > p {
-    font-size: 25px;
+    font-size: 120%;
   }
 
   .price-status-container {
-    font-size: 20px
+    font-size: 100%;
   }
 
   .status-container > img {
