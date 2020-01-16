@@ -349,4 +349,15 @@
     filter: brightness(0) invert(1)
   }
 
+  .buy-button {
+    margin-top: 5px;
+    font-size: 18px;
+    border-radius: 30px;
+    padding: 18px;
+    width: 65%;
+    word-spacing: 3px; 
+    background-color: #15573F;
+    color: white; 
+  }
+
 }

@@ -434,6 +434,7 @@ body{
 @media only screen and (max-width: 500px) {
 
   .quizz-big-container {
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -537,13 +538,48 @@ body{
   }
 
   .pick-h1-container{
+    font-size: 45px;
     width: 80vw;
     text-align: center;
   }
 
+  .plants-container {
+    overflow-x: auto;
+    width: 100vw;
+  }
+
   .plants-container > ul {
+    width: 370vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
+  }
+
+  .plant-buy-container {
+    width: 85vw;
+    height: 47vh;
+    box-shadow: rgb(0, 0, 0, 0.05) -3px 25px 25px 0px;
+  }
+
+  .plant-buy-container > img {
+    height: 200px;
+  }
+
+  .plant-informations-container {
+    width: 80%;
+  }
+
+  .plant-informations-container > p {
+    font-size: 25px;
+  }
+
+  .price-status-container {
+    font-size: 20px
+  }
+
+  .status-container > img {
+    height: 30px;
+    margin-left: 15px;
   }
 }
