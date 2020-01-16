@@ -82,13 +82,14 @@ const Quizz = () => {
   }
 
   return (
-    <div>
+    <div className='quizz-big-container'>
+      <img className='logo-mobile' src={logo} alt="logo-mobile"/>
       <img className='logo' src={logo} alt="logo" />
       <div className='side-line' />
       {sunVisible ?
         <div className='quizz-container'>
           <img className='sun-illustration' src={sunImage} alt="sun" />
-          <h1 className='h1-container'>
+          <h1 className='sun-h1-container'>
             First, set the amount of
             <b> sunlight</b> your plant will get.
           </h1>
@@ -99,7 +100,7 @@ const Quizz = () => {
               <Button method={() => setSun('no')} label='No sunlight' image={sun === 'no' ? noWhiteSun : noSun} styleName={sun === 'no' ? 'sun-chosen-button' : 'button-choice'} />
             </div>
             <div className='next-button-container'>
-              <Link className='next-button' to='/'>
+              <Link className='back-button' to='/'>
                 <img className='back-arrow' src={arrow} alt="" />
                 home
               </Link>
@@ -110,7 +111,7 @@ const Quizz = () => {
       {waterVisible ?
         <div className='quizz-container'>
           <img className='water-illustration' src={waterImage} alt="water" />
-          <h1 className='h1-container'>
+          <h1 className='water-h1-container'>
             How often do you want to
             <b> water</b> your plant?
           </h1>
@@ -121,7 +122,7 @@ const Quizz = () => {
               <Button method={() => setWater('daily')} label='Daily' image={water === 'daily' ? dailyWhiteWater : dailyWater} styleName={water === 'daily' ? 'water-chosen-button' : 'button-choice'} />
             </div>
             <div className="next-button-container">
-              <Button method={() => sunOn()} label='previous' styleName='next-button' image={arrow} imageClass='back-arrow' />
+              <Button method={() => sunOn()} label='previous' styleName='back-button' image={arrow} imageClass='back-arrow' />
               <Button method={() => waterOff()} label='next' styleName='next-button' image={arrow} imageClass='next-arrow' />
             </div>
           </div>
@@ -138,12 +139,12 @@ const Quizz = () => {
           </div>
           <p>We are asking because some plants can be <b> toxic</b> for your buddy. </p>
           <div className='pet-buttons-container'>
-            <div className="choice-buttons-container">
+            <div className="pet-choice-buttons-container">
               <Button method={() => setPet('true')} label='Yes' image={pet === 'true' ? yesWhitePet : yesPet} styleName={pet === 'true' ? 'sun-chosen-button' : 'button-choice'} />
               <Button method={() => setPet('false')} label="No/They don't care" image={pet === 'false' ? noWhitePet : noPet} styleName={pet === 'false' ? 'sun-chosen-button' : 'button-choice'} />
             </div>
             <div className="next-button-container">
-              <Button method={() => waterOn()} label='previous' styleName='next-button' image={arrow} imageClass='back-arrow' />
+              <Button method={() => waterOn()} label='previous' styleName='back-button' image={arrow} imageClass='back-arrow' />
               <Button method={() => petOff()} label='finish' styleName='next-button' image={arrow} imageClass='next-arrow' />
             </div>
           </div>
