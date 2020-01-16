@@ -552,10 +552,11 @@ body{
 
   .plants-container > ul {
     width: 550vw;
+    margin-bottom: 60px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -563,7 +564,7 @@ body{
     width: 300px;
     height: 400px;
     box-shadow: rgb(0, 0, 0, 0.05) -3px 25px 25px 0px;
-    margin: 0px 20px 0px 10px
+    margin: 0px 20px 0px 20px
   }
 
   .plant-buy-container > img {

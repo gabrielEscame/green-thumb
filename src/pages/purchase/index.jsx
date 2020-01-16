@@ -22,7 +22,7 @@ const Purchase = (props) => {
     api.get(`front-plantTest-service/plant?id=${id}`)
       .then(response => setPlant(response.data))
       .catch(err => console.log(err))
-  }, [])
+  }, [props.match.params])
   return (
     <div className='purchase-container'>
       <img className='purchase-logo' src={logo} alt="logo" />
