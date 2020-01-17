@@ -295,4 +295,101 @@
 
 @media only screen and (max-width: 500px) {
 
+  .purchase-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+  }
+
+  .purchase-logo{
+    transform: rotate(0deg);
+    top: 30px;
+    left: auto;
+  }
+  
+  .purchase-side-line{
+    display: none;
+  }
+
+  .purchase-plant-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 0px 0px 0px 0px;
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  .purchase-plant-container > h1 {
+    margin: 130px 0px 5px 10px
+  }
+
+  .purchase-plant-container > h3 {
+    width: 100vw;
+    padding-left: 75px;
+  }
+
+  .purchase-plant-container > img{
+    height: 300px;
+    margin-bottom: 40px;
+  }
+
+  .purchase-plant-status {
+    width: 100vw;
+    height: 125px;
+    margin-bottom: 50px
+  }
+
+  .purchase-status-image-plant {
+    margin-left: 30px;
+  }
+
+  .purchase-status-image-plant > img {
+    height: 30px;
+  }
+
+  .purchase-status-text-plant > p {
+    font-size: 20px
+  }
+
+  .purchase-form-container {
+    margin: 0px 0px 0px 0px;
+    width: 100vw;
+    height: auto;
+  }
+
+  .purchase-form-text-container {
+    width: 100vw;
+  }
+
+  .purchase-form-text-container > input {
+    width: 70%;
+    padding: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+
+  .purchase-form-text-container > h1 {
+    margin-left: 30px;
+  }
+
+  .purchase-form-text-container > h2 {
+    margin-left: 30px;
+    font-size: 22px;
+  }
+
+  .purchase-form-text-container > p {
+    margin-left: 30px;
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+
+  .purchase-button-container {
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 30px;
+  }
 }
