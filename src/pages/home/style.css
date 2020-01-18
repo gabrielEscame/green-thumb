@@ -151,6 +151,8 @@
   }
 }
 
+/* MOBILE RESPONSIVITY */
+
 @media only screen and (max-width: 500px) {
 
   .home-container {
@@ -159,6 +161,7 @@
     align-items: center;
     flex-wrap: wrap;
     height: 100vh;
+    width: 100vw;
   }
 
   .logo-container {
