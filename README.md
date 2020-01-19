@@ -1,5 +1,9 @@
 # Red Ventures | front-end challenge
 
+Acesse diretamente:
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3f148af0-029a-4e91-8cb0-f375a99a056b/deploy-status)](https://app.netlify.com/sites/greenthumb-rv/deploys)
+
 ## Instalação
 
 1. Faça o download da aplicação usando o terminal.
