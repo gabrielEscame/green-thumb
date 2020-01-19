@@ -52,7 +52,7 @@ const Purchase = (props) => {
   }, [])
 
   const onClick = () => {
-    const filterEmail = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    const filterEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     const filterName = /^[a-zA-Z]{3,}(?: [a-zA-Z]+){1,4}$/;
 
     if (!emailValue || !filterEmail.test(emailValue)) {
