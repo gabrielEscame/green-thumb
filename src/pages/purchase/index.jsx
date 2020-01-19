@@ -13,7 +13,7 @@ import regularlyWaterGrey from '../../images/icons/grey/two-drops.png';
 import dailyWaterGrey from '../../images/icons/grey/three-drops.png';
 import toxicGrey from '../../images/icons/grey/toxic.svg';
 import petGrey from '../../images/icons/grey/pet.svg';
-import letterImage from '../../images/illustrations/envelop.png'
+import letterImage from '../../images/illustrations/envelop.png';
 
 const Purchase = (props) => {
   const [plant, setPlant] = useState({});
