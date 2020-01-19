@@ -110,16 +110,16 @@ const Purchase = (props) => {
           <div className='purchase-status-text-plant'>
             <p>{`${plant.sun} sunlight`}</p>
             <p>{`Water ${plant.water}`}</p>
-            <p>{plant.toxicity ? `Beware! Toxic for pets` : 'Non-toxic for pets'}</p>
+            {plant.toxicity ? <p> <b>Beware!</b> Toxic for pets</p> : <p> Non-toxic for pets </p>}
           </div>
         </div>
       </div>
       <div className="purchase-form-container">
         {send ?
           <div className='purchase-form-send'>
-              <h1>Thank you!</h1>
-              <p>you will hear from us soon. Please check your e-mail!</p>
-              <img src={letterImage} alt="letter"/>
+            <h1>Thank you!</h1>
+            <p>you will hear from us soon. Please check your e-mail!</p>
+            <img src={letterImage} alt="letter" />
           </div> :
           <div className='purchase-form-text-container'>
             <h1>Nice Pick!</h1>

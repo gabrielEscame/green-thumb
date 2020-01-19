@@ -528,4 +528,7 @@
     width: 95%;
   }
   
+  .purchase-form-send > img {
+    margin-bottom: 50px;
+  }
 }
