@@ -13,6 +13,7 @@ import regularlyWaterGrey from '../../images/icons/grey/two-drops.png';
 import dailyWaterGrey from '../../images/icons/grey/three-drops.png';
 import toxicGrey from '../../images/icons/grey/toxic.svg';
 import petGrey from '../../images/icons/grey/pet.svg';
+import letterImage from '../../images/illustrations/envelop.png'
 
 const Purchase = (props) => {
   const [plant, setPlant] = useState({});
@@ -24,6 +25,7 @@ const Purchase = (props) => {
   const [inputClassEmail, setInputClassEmail] = useState('purchase-form-input');
   const [inputTitleClassName, setInputTitleClassName] = useState('purchase-form-input-title');
   const [inputTitleClassEmail, setInputTitleClassEmail] = useState('purchase-form-input-title');
+  const [send, setSend] = useState(false);
 
 
 
@@ -35,25 +37,26 @@ const Purchase = (props) => {
   }, [props.match.params])
 
   const onChangeName = useCallback((e) => {
-    let {value} = e.target;
+    let { value } = e.target;
     const filter = /^[a-zA-Z\s]+$/;
-    if(value === '' || filter.test(value)){
+    if (value === '' || filter.test(value)) {
       setNameValue(e.target.value)
     }
   }, [])
 
   const onChangeEmail = useCallback((e) => {
-    let {value} = e.target;
-    if(value === '' || value) {
+    let { value } = e.target;
+    if (value === '' || value) {
       setEmailValue(e.target.value)
     }
   }, [])
 
   const onClick = () => {
     const filterEmail = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
-    ;
-    const filterName = /^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/;
-    if(!emailValue || !filterEmail.test(emailValue)){
+      ;
+    const filterName = /^[a-zA-Z]{3,}(?: [a-zA-Z]+){1,4}$/;
+
+    if (!emailValue || !filterEmail.test(emailValue)) {
       setErrorEmail('please provide a valid e-mail');
       setInputClassEmail('input-error');
       setInputTitleClassEmail('input-title-error')
@@ -69,13 +72,14 @@ const Purchase = (props) => {
       setErrorName('');
       setErrorEmail('');
       setInputClassName('purchase-form-input');
-      setInputClassEmail('purchase-form-input');      
+      setInputClassEmail('purchase-form-input');
       setInputTitleClassName('purchase-form-input-title');
       setInputTitleClassEmail('purchase-form-input-title');
+      setSend(true);
       api.post('front-plantTest-service', {
         name: nameValue,
         email: emailValue,
-        id: '1'
+        id: plant.id
       })
         .then(function (response) {
           console.log(response);
@@ -85,7 +89,7 @@ const Purchase = (props) => {
         });
     }
   }
-  
+
   return (
     <div className='purchase-container'>
       <img className='purchase-logo' src={logo} alt="logo" />
@@ -112,23 +116,32 @@ const Purchase = (props) => {
         </div>
       </div>
       <div className="purchase-form-container">
-        <div className='purchase-form-text-container'>
-          <h1>Nice Pick!</h1>
-          <p className='purchase-form-p'>
-            Tell us your name and e-mail
-            and we will get in touch
-            regarding your order ;)
+        {send ?
+          <div className='purchase-form-send'>
+              <h1>Thank you!</h1>
+              <p>you will hear from us soon. Please check your e-mail!</p>
+              <img src={letterImage} alt="letter"/>
+          </div> :
+          <div className='purchase-form-text-container'>
+            <h1>Nice Pick!</h1>
+            <p className='purchase-form-p'>
+              Tell us your name and e-mail
+              and we will get in touch
+              regarding your order ;)
           </p>
-          <h2 className={inputTitleClassName}>Name</h2>
-          <input type="text" placeholder='Crazy Plant Person' onChange={onChangeName} value={nameValue} className={inputClassName}/>
-          <p className='error'>{errorName}</p>
-          <h2 className={inputTitleClassEmail}>E-mail</h2>
-          <input type="text" placeholder='plantperson@email.com' onChange={onChangeEmail} value={emailValue} className={inputClassEmail}/>
-          <p className='error'>{errorEmail}</p>
-        </div>
-        <div className='purchase-button-container'>
-          <Button label='send' method={() => onClick()} styleName='send-button'/>
-        </div>
+            <h2 className={inputTitleClassName}>Name</h2>
+            <input type="text" placeholder='Crazy Plant Person' onChange={onChangeName} value={nameValue} className={inputClassName} />
+            <p className='error'>{errorName}</p>
+            <h2 className={inputTitleClassEmail}>E-mail</h2>
+            <input type="text" placeholder='plantperson@email.com' onChange={onChangeEmail} value={emailValue} className={inputClassEmail} />
+            <p className='error'>{errorEmail}</p>
+          </div>
+        }
+        {send ? null :
+          <div className='purchase-button-container'>
+            <Button label='send' method={() => onClick()} styleName='send-button' />
+          </div>
+        }
       </div>
     </div>
   );
