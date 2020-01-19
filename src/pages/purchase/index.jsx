@@ -16,11 +16,15 @@ import petGrey from '../../images/icons/grey/pet.svg';
 
 const Purchase = (props) => {
   const [plant, setPlant] = useState({});
-  const [error, setError] = useState('');
   const [nameValue, setNameValue] = useState('');
   const [emailValue, setEmailValue] = useState('');
-  const [inputClass, setInputClass] = useState('purchase-form-input');
-  const [inputTitleClass, setInputTitleClass] = useState('purchase-form-input-title');
+  const [errorName, setErrorName] = useState('');
+  const [errorEmail, setErrorEmail] = useState('');
+  const [inputClassName, setInputClassName] = useState('purchase-form-input');
+  const [inputClassEmail, setInputClassEmail] = useState('purchase-form-input');
+  const [inputTitleClassName, setInputTitleClassName] = useState('purchase-form-input-title');
+  const [inputTitleClassEmail, setInputTitleClassEmail] = useState('purchase-form-input-title');
+
 
 
   useEffect(() => {
@@ -46,17 +50,28 @@ const Purchase = (props) => {
   }, [])
 
   const onClick = () => {
-    const filter = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+    const filterEmail = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
     ;
-    if(!emailValue || !filter.test(emailValue)){
-      setError('please provide a valid e-mail');
-      setInputClass('input-error');
-      setInputTitleClass('input-title-error')
+    const filterName = /^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/;
+    if(!emailValue || !filterEmail.test(emailValue)){
+      setErrorEmail('please provide a valid e-mail');
+      setInputClassEmail('input-error');
+      setInputTitleClassEmail('input-title-error')
     }
+
+    if (!nameValue || !filterName.test(nameValue)) {
+      setErrorName('please provide your full name');
+      setInputClassName('input-error');
+      setInputTitleClassName('input-title-error')
+    }
+
     else {
-      setError('');
-      setInputClass('purchase-form-input');
-      setInputTitleClass('purchase-form-input-title');
+      setErrorName('');
+      setErrorEmail('');
+      setInputClassName('purchase-form-input');
+      setInputClassEmail('purchase-form-input');      
+      setInputTitleClassName('purchase-form-input-title');
+      setInputTitleClassEmail('purchase-form-input-title');
       api.post('front-plantTest-service', {
         name: nameValue,
         email: emailValue,
@@ -104,11 +119,12 @@ const Purchase = (props) => {
             and we will get in touch
             regarding your order ;)
           </p>
-          <h2 className='purchase-form-input-title'>Name</h2>
-          <input type="text" placeholder='Crazy Plant Person' onChange={onChangeName} value={nameValue} className='purchase-form-input'/>
-          <h2 className={inputTitleClass}>E-mail</h2>
-          <input type="text" placeholder='plantperson@email.com' onChange={onChangeEmail} value={emailValue} className={inputClass}/>
-          <p className='error'>{error}</p>
+          <h2 className={inputTitleClassName}>Name</h2>
+          <input type="text" placeholder='Crazy Plant Person' onChange={onChangeName} value={nameValue} className={inputClassName}/>
+          <p className='error'>{errorName}</p>
+          <h2 className={inputTitleClassEmail}>E-mail</h2>
+          <input type="text" placeholder='plantperson@email.com' onChange={onChangeEmail} value={emailValue} className={inputClassEmail}/>
+          <p className='error'>{errorEmail}</p>
         </div>
         <div className='purchase-button-container'>
           <Button label='send' method={() => onClick()} styleName='send-button'/>

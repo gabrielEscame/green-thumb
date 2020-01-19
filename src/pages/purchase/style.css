@@ -83,7 +83,7 @@
   background-color: #f6f6f6;
   margin-right: 250px;
   margin-top: 80px;
-  height: 75vh;
+  height: 80vh;
   width: 28vw;
 }
 
@@ -149,6 +149,7 @@
   font-size: 13px;
   color: red;
   margin-left: 20px;
+  margin-bottom: 5px;
 }
 
 /* 1920 RESPONSIVITY */
@@ -197,10 +198,6 @@
   .purchase-status-image-plant > img {
     height: 25px;
   }
-  
-  .purchase-form-p {
-    font-size: 20px;
-  }
 
   .purchase-form-container {
     margin-right: 400px;
@@ -245,7 +242,14 @@
     margin-bottom: 30px;
     border: 1px solid red; 
   }
+
+  .error {
+    margin-bottom: 20px;
+  }
+
 }
+
+/* MACBOOK RESPONSIVITY */
 
 @media only screen and (min-width: 1440px) and (max-width: 1919px) {
 
@@ -294,26 +298,26 @@
   
   .purchase-form-p {
     font-size: 20px;
+    width: 300px;
+    line-height: 30px;
+    margin-bottom: 45px;
   }
 
   .purchase-form-container {
     margin-right: 150px;
     margin-top: 120px;
-    height: 68vh;
+    height: 70vh;
     width: 50vh;
+  }
+
+  .purchase-form-text-container {
+    height: 85%;
   }
 
   .purchase-form-text-container > h1 {
     font-size: 45px;
     margin-top: 60px;
     margin-bottom: 15px;
-  }
-
-  .purchase-form-text-container > p {
-    font-size: 20px;
-    width: 300px;
-    line-height: 30px;
-    margin-bottom: 45px;
   }
 
   .purchase-form-input-title {
@@ -329,15 +333,19 @@
     padding: 18px 18px;
     width: 90%; 
     border-radius: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .input-error {
     padding: 18px 18px;
     width: 90%; 
     border-radius: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     border: 1px solid red;
+  }
+
+  .error {
+    margin-bottom: 10px;
   }
 }
 
