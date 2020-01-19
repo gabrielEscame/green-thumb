@@ -52,8 +52,7 @@ const Purchase = (props) => {
   }, [])
 
   const onClick = () => {
-    const filterEmail = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
-      ;
+    const filterEmail = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     const filterName = /^[a-zA-Z]{3,}(?: [a-zA-Z]+){1,4}$/;
 
     if (!emailValue || !filterEmail.test(emailValue)) {
@@ -62,7 +61,7 @@ const Purchase = (props) => {
       setInputTitleClassEmail('input-title-error')
     }
 
-    if (!nameValue || !filterName.test(nameValue)) {
+    else if (!nameValue || !filterName.test(nameValue)) {
       setErrorName('please provide your full name');
       setInputClassName('input-error');
       setInputTitleClassName('input-title-error')
@@ -75,7 +74,6 @@ const Purchase = (props) => {
       setInputClassEmail('purchase-form-input');
       setInputTitleClassName('purchase-form-input-title');
       setInputTitleClassEmail('purchase-form-input-title');
-      setSend(true);
       api.post('front-plantTest-service', {
         name: nameValue,
         email: emailValue,
@@ -83,6 +81,7 @@ const Purchase = (props) => {
       })
         .then(function (response) {
           console.log(response);
+          setSend(true);
         })
         .catch(function (error) {
           console.log(error);
